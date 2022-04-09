@@ -8,7 +8,8 @@
 
 ## Programování
 
-* [Java 8 tahák](./dox/Java%208%20tahák.MD)
+* [Java tahák I: Strukturované paradigma](./dox/Java%208%20tahák.MD)
+* [Java tahák II: Objektové paradigma](./dox/Java%2017%20tahák.MD)
 
 ## Software
 

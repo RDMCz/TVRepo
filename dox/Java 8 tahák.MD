@@ -1,4 +1,4 @@
-# Java 8 tahák
+# Java tahák I: Strukturované paradigma
 
 ## Úryvky
 
@@ -140,6 +140,7 @@ int randomNumber = rand.nextInt((max - min) + 1) + min;
 int ogX1 = x1;
 int ogX2 = x2;
 
+// Eukleidův algoritmus
 while (x1 != x2) {
     if (x1 > x2) {
         x1 -= x2;
@@ -154,7 +155,7 @@ int delitel = x1;
 int nasobek = (ogX1 * ogX2) / delitel;
 ```
 
-### Sort
+### Bubble sort
 
 ```java
 for (int i = 0; i < pole.length; i++) {
@@ -168,7 +169,7 @@ for (int i = 0; i < pole.length; i++) {
 }
 ```
 
-### ~Sinus
+### Taylor sinus
 
 ```java
 double result = 0;
