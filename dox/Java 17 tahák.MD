@@ -28,7 +28,9 @@ public class Human implements Comparable<Human> {
 
 // Poté můžeme řadit:
 ArrayList<Human> humans = new ArrayList<>( ... );
-Collections.sort(humans); // Objekty typu Human budou v humans seřazeny podle atributu name s ohledem na českou abecedu (Collections.sort využívá metody compareTo ve třídě Human)
+Collections.sort(humans);
+// Objekty typu Human budou v humans seřazeny podle atributu name s ohledem na českou abecedu
+// (Collections.sort využívá metody compareTo ve třídě Human)
 ```
 
 ## Další metody řazení
@@ -79,6 +81,84 @@ public void sortByNameAnonymous() {
 
 ```java
 public void sortByNameLambda() {
-    Collections.sort(humans, (Human h1, Human h2) -> h1.getName().compareTo(h2.getName());
+    Collections.sort(humans, (Human h1, Human h2) -> h1.getName().compareTo(h2.getName()));
 }
 ```
+
+## Práce se soubory
+
+* Preferujeme konstrukci _try-with-resources_
+* Proudy obvykle vyhazují výjimky, třeba odchytit
+
+### Čtení textových souborů
+
+#### BufferedReader
+
+```java
+File input = new File("D:\\text.txt");
+
+try (BufferedReader br = new BufferedReader(new FileReader(input))) {
+    String line;
+    // Vypisujeme řádky dokud nenarazíme na prázdný
+    while ((line = br.readLine()) != null) {
+        System.out.println(line);
+    }
+}
+```
+
+#### Scanner
+
+```java
+try (Scanner sc = new Scanner(input)) {
+    //sc.useDelimiter(",");
+    while(sc.hasNextLine()) {
+        System.out.println(sc.nextLine());
+    }
+}
+```
+
+### Zápis textových souborů
+
+#### PrintWriter
+
+```java
+File output = new File("D:\\text_out.txt");
+
+try (PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(output)))) {
+    pw.printLine(" ... ");
+}
+```
+
+* Druhým parametrem _FileWriteru_ může být `boolean append`
+
+### Zápis binárních souborů
+
+```java
+try (DataOutputStream out = new DataOutputStream(new FileOutputStream(binaryFile))) {
+    out.writeUTF("Text");
+    out.writeBoolean(false);
+    out.writeInt(50);
+}
+```
+
+* Mezi proudy ještě můžeme přidat `BufferedOutputStream`
+
+### Čtení binárních souborů
+
+```java
+try (DataInputStream in = new DataInputStream(new FileInputStream(output))) {
+    boolean end = false;
+    while (!end) {
+        try {
+            System.out.println(in.readUTF());
+            System.out.println(in.readBoolean());
+            System.out.println(in.readInt());                    
+        }
+        catch (EOFException ex) {
+            end = true;
+        }
+    }
+}
+```
+
+* Mezi proudy ještě můžeme přidat `BufferedInputStream`

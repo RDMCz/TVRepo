@@ -99,12 +99,20 @@ map.put("abcd", map.get("abcd") + 1); // Zvyš value o jedna
 ```java
 float f;
 System.out.printf("%.2f%n", f);     // Zaokrouhlí na 2 desetinná místa
-System.out.printf("%10.2f%n", f);   // Zaokrouhlí na 2 desetinná místa
-                                    // + minimální délka celého výpisu je 10 (doplní vlevo mezery, pokud je třeba)
+System.out.printf("%10.2f%n", f);   // Zaokrouhlí na 2 desetinná místa + minimální délka celého výpisu je 10
+                                    // (doplní vlevo mezery, pokud je třeba)
 
 int i;
 System.out.printf("%04d%n", i);     // Mininální délka vypsaného čísla je 4 – doplní zleva nulami, pokud je třeba
+
+String s;
+System.out.printf("%20s")           // Minimální délka výpisu je 20, doplní zleva mezerami
+System.out.printf("%-20s")          // Minimální délka výpisu je 20, doplní zprava mezerami
+System.out.printf("%20.10s")        // Minimální délka výpisu je 20 a maximální délka řetězce je 10
+                                    // (řetězec oříznut zprava, pokud je příliš dlouhý)
 ```
+
+* `System.out.printf` a `System.out.format` nedávají na konec výpisu znak pro konec řádku, je tedy třeba použít `\n` nebo `%n`
 
 ### Locale
 
