@@ -146,7 +146,7 @@ try (DataOutputStream out = new DataOutputStream(new FileOutputStream(binaryFile
 ### Čtení binárních souborů
 
 ```java
-try (DataInputStream in = new DataInputStream(new FileInputStream(output))) {
+try (DataInputStream in = new DataInputStream(new FileInputStream(binaryFile))) {
     boolean end = false;
     while (!end) {
         try {

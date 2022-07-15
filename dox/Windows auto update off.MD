@@ -1,7 +1,7 @@
 # Windows 10 Pro – Vypnutí automatického stahování a instalace aktualizací
 
 1. Otevřeme _Editor místních zásad skupiny_
-   * Např. pomocí `Ctrl` + `R` a spuštěním `gpedit.msc` nebo vyhledáním výrazu _Upravit zásady skupiny_
+   * Např. pomocí `Win` + `R` a spuštěním `gpedit.msc` nebo vyhledáním výrazu _Upravit zásady skupiny_
 
 2. Navigujeme do _Konfigurace počítače_ > _Šablony pro správu_ > _Součásti systému Windows_ > _Windows Update_
 
