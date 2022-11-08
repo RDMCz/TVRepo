@@ -4,10 +4,9 @@
 
 * [Goniometrické funkce](./dox/Goniometrické%20funkce.MD)
 
-<!--* [Lineární algebra](./dox/Lineární%20algebra.MD)-->
-
 ## Programování
 
+* [C tahák](./dox/C%20tah%C3%A1k.MD)
 * [Java tahák I: Strukturované paradigma](./dox/Java%208%20tahák.MD)
 * [Java tahák II: Objektové paradigma](./dox/Java%2017%20tahák.MD)
 
@@ -19,8 +18,8 @@
 
 ### Windows 10
 
-* [Vypnutí automatického stahování a instalace aktualizací](./dox/Windows%20auto%20update%20off.MD)
 * [Přihlášení bez nutnosti zadávání hesla či PINu](./dox/Windows%20auto%20login.MD)
+* [Vypnutí automatického stahování a instalace aktualizací](./dox/Windows%20auto%20update%20off.MD)
 
 ---
 

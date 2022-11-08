@@ -3,7 +3,7 @@
 1. Otevřeme _Editor místních zásad skupiny_
    * Např. pomocí `Win` + `R` a spuštěním `gpedit.msc` nebo vyhledáním výrazu _Upravit zásady skupiny_
 
-2. Navigujeme do _Konfigurace počítače_ > _Šablony pro správu_ > _Součásti systému Windows_ > _Windows Update_
+2. Navigujeme do _Konfigurace počítače_ → _Šablony pro správu_ → _Součásti systému Windows_ → _Windows Update_
 
 3. Zde rozklikneme položku _Konfigurace automatických aktualizací_
 
