@@ -7,6 +7,7 @@
 ## Programování
 
 * [C tahák](./dox/C%20tah%C3%A1k.MD)
+* [C++ tahák](./dox/Cpp%20tah%C3%A1k.MD)
 * [Java tahák I: Strukturované paradigma](./dox/Java%208%20tahák.MD)
 * [Java tahák II: Objektové paradigma](./dox/Java%2017%20tahák.MD)
 

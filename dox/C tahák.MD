@@ -47,7 +47,7 @@ fclose(fwt);
 // Binární – zápis
 FILE* fwb;
 fwb = fopen("soubor.bin", "wb");
-fwrite(&i, sizeof(i), 1, fwb); // ukazatel na první prvek (odkud bereme zapisovaný blok dat), velikost prvku, počet prvků, file stream
+fwrite(&i, sizeof(i), 1, fwb); // ukazatel na první prvek (odkud bereme zapisovaný blok dat), velikost prvku, počet prvků, stream
 fwrite(&f, sizeof(f), 1, fwb);
 fwrite(&d, sizeof(d), 1, fwb);
 fclose(fwb);
@@ -104,7 +104,8 @@ int main() {
 
     // Naplnění pole
     for (int i = 0; i < size; i++) {
-        *(array_p + i) = i; // array_p je ukazatel na první prvek pole, přičítáním k jeho hodnotě se dostáváme na následující adresy (následující prvky v poli)
+        // array_p je ukazatel na první prvek pole, přičítáním k jeho hodnotě se dostáváme na následující adresy (následující prvky v poli)
+        *(array_p + i) = i;
     }
 
     // Reverse pole (pomocí postupného prohazování krajních čísel)
