@@ -104,7 +104,7 @@ int main() {
 
     // Naplnění pole
     for (int i = 0; i < size; i++) {
-        // array_p je ukazatel na první prvek pole, přičítáním k jeho hodnotě se dostáváme na následující adresy (následující prvky v poli)
+        // array_p je ukazatel na první prvek pole, přičítáním k jeho hodnotě se dostáváme na adresy následujících prvků v poli
         *(array_p + i) = i;
     }
 
