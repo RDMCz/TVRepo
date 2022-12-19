@@ -32,13 +32,13 @@ list.clear();
 list.push_back(0);
 
 // Procházení prvků
-for (const int &item : list) {
+for (const int& item : list) {
     std::cout << item << "\n";
 }
 
 // Seřazení
 std::sort(list.begin(), list.end());
-std::sort(list.begin(), list.end(), std::greater<int>());
+std::sort(list.begin(), list.end(), std::greater<int>()); // Sestupně
 
 // Custom seřazení
 std::sort(list.begin(), list.end(), [](int& i1, int& i2) {
@@ -47,8 +47,7 @@ std::sort(list.begin(), list.end(), [](int& i1, int& i2) {
 
 // indexOf (first occurence)
 int num = 80;
-int numIndex = find(list.begin(), list.end(), num) - list.begin();
-std::cout << numIndex << "\n"; // Při žádné shodě vrací list.size() (out of bounds!)
+int numIndex = find(list.begin(), list.end(), num) - list.begin(); // Při žádné shodě vrací list.size() (out of bounds!)
 
 // Smazání prvku na indexu i
 list.erase(list.begin() + i);
@@ -97,7 +96,101 @@ while (getline(ss, part, ',')) {
 
 std::string text = "abcdoldefgholdijkl";
 text = std::regex_replace(text, std::regex("old"), "new");
-std::cout << text; //abcdnewefghnewijkl
+std::cout << text;//abcdnewefghnewijkl
 ```
 
 ## Objektové paradigma
+
+### Dědičnost, polymorfismus
+
+```cpp
+// .hpp
+class FormElement {
+public:
+    virtual const std::string getHTML() const = 0;
+};
+
+class Input : public FormElement {
+public:
+    virtual const std::string getHTML() const override;
+};
+
+class Password : public Input {
+public:
+    virtual const std::string getHTML() const override final;
+};
+```
+
+* Dědíme klasicky přes dvojtečku, mezi dvojtečku a název předka ještě píšeme modifikátor přístupu určující dostupnost předkových metod a atributů
+* `virtual` – metoda může být přepsána v potomcích
+  * Přepsané třídy jsou automaticky také virtuální, v potomcích již tedy není třeba psát `virtual`
+  * Přidáním `= 0` říkáme, že se jedná o abstraktní metodu a tedy i o abstraktní třídu
+* `override` – metoda přepisuje metodu předka, nepovinné
+* `final` – metoda již nemůže být přepsána v dalších potomcích
+* `const`
+  * Na začátku – návratový typ je neměnný
+  * Na konci – uvnitř metody nelze měnit atributy třídy (this pointer ukazuje na neměnný objekt)
+
+### Kopírovací konstruktor
+
+```cpp
+// .hpp
+class Text {
+private:
+    char* cstring;
+public:
+    Text(const char* cstring = "");
+    Text(const Text& other);
+};
+
+// .cpp
+Text::Text(const char* cstring) : cstring(new char[std::strlen(cstring) + 1]) {
+    std::memcpy(this->cstring, cstring, std::strlen(cstring) + 1);
+}
+
+Text::Text(const Text& other) : Text(other.cstring) {}
+```
+
+### Přetížení operátoru
+
+```cpp
+// .hpp
+class Text {
+private:
+    char* cstring;
+public:
+    Text(const char* cstring = "");
+    Text& operator=(const Text& other);
+};
+
+// .cpp
+Text::Text(const char* cstring) : cstring(new char[std::strlen(cstring) + 1]) {
+    std::memcpy(this->cstring, cstring, std::strlen(cstring) + 1);
+}
+
+Text& Text::operator=(const Text& other) {
+    if (this == &other) return *this;
+    char* newCstring = new char[std::strlen(other.cstring) + 1];
+    std::memcpy(newCstring, other.cstring, std::strlen(other.cstring) + 1);
+    delete[] cstring;
+    cstring = newCstring;
+    return *this;
+}
+```
+
+### "toString"
+
+```cpp
+// .hpp
+class Text {
+private:
+    std::string value;
+public:
+    friend std::ostream& operator<<(std::ostream& stream, const Text& text);
+};
+
+// .cpp
+std::ostream& operator<<(std::ostream& stream, const Text& text) {
+    return stream << text.value;
+}
+```
