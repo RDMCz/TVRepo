@@ -39,10 +39,10 @@ fprintf(fwt, "%d %f %lf", i, f, d);
 fclose(fwt);
 
 // Textový – čtení
-FILE* fwt;
-fwt = fopen("soubor.txt", "r");
-(void)fscanf(fwt, "%d %f %lf", &i, &f, &d);
-fclose(fwt);
+FILE* frt;
+frt = fopen("soubor.txt", "r");
+(void)fscanf(frt, "%d %f %lf", &i, &f, &d);
+fclose(frt);
 
 // Binární – zápis
 FILE* fwb;
@@ -53,12 +53,12 @@ fwrite(&d, sizeof(d), 1, fwb);
 fclose(fwb);
 
 // Binární – čtení
-FILE* fwb;
-fwb = fopen("soubor.bin", "rb");
-fread(&i, sizeof(i), 1, fwb);
-fread(&f, sizeof(f), 1, fwb);
-fread(&d, sizeof(d), 1, fwb);
-fclose(fwb);
+FILE* frb;
+frb = fopen("soubor.bin", "rb");
+fread(&i, sizeof(i), 1, frb);
+fread(&f, sizeof(f), 1, frb);
+fread(&d, sizeof(d), 1, frb);
+fclose(frb);
 ```
 
 ## Ukazatele
@@ -208,6 +208,14 @@ osoba_p = &osoba;
 osoba_p->vaha = 90; // Operátor takzvané šipky, ekvivalentní k `(*osoba_p).vaha = 90;`
 osoba_p->vyska = 190;
 printf("%d %d\n", osoba.vaha, osoba.vyska); // 90 190
+
+// Pole struktur
+int size = 10;    
+MIRY* pole = (MIRY*)malloc(size * sizeof(MIRY));
+for (int i = 0; i < size; i++) {
+    (pole + i)->vaha = 70 + i;
+    (pole + i)->vyska = 170 + i;
+}
 ```
 
 ## Random

@@ -9,8 +9,14 @@
 char ch = '5';
 int num = ch - '0';
 
+// int/long/... to std::string
+std::string s = std::to_string(50);
+
 // std::string to int
 int num = std::stoi("50");
+
+// std::string to long long
+long long num = std::stoll("50");
 ```
 
 ### std::vector
@@ -45,7 +51,7 @@ std::sort(list.begin(), list.end(), [](int& i1, int& i2) {
     return (i1 < i2); // Zde můžeme definovat/volat vlastní řadící funkci
 });
 
-// indexOf (first occurence)
+// indexOf (first occurrence)
 int num = 80;
 int numIndex = find(list.begin(), list.end(), num) - list.begin(); // Při žádné shodě vrací list.size() (out of bounds!)
 
@@ -91,7 +97,7 @@ while (getline(ss, part, ',')) {
     parts.push_back(part);
 }
 
-// -- Replace all occurences -------------------------------------------------------------
+// -- Replace all occurrences ------------------------------------------------------------
 #include <regex>
 
 std::string text = "abcdoldefgholdijkl";
@@ -121,9 +127,9 @@ public:
 };
 ```
 
-* Dědíme klasicky přes dvojtečku, mezi dvojtečku a název předka ještě píšeme modifikátor přístupu určující dostupnost předkových metod a atributů
+* Dědíme klasicky přes dvojtečku, mezi dvojtečku a název předka ještě píšeme modifikátor přístupu určující dostupnost předkových metod a atributů vůči potomkovi
 * `virtual` – metoda může být přepsána v potomcích
-  * Přepsané třídy jsou automaticky také virtuální, v potomcích již tedy není třeba psát `virtual`
+  * Přepsané metody jsou automaticky také virtuální, v potomcích již tedy není třeba psát `virtual`
   * Přidáním `= 0` říkáme, že se jedná o abstraktní metodu a tedy i o abstraktní třídu
 * `override` – metoda přepisuje metodu předka, nepovinné
 * `final` – metoda již nemůže být přepsána v dalších potomcích
