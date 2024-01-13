@@ -11,3 +11,9 @@ git reset
 ```shell
 git reset HEAD~
 ```
+
+## Změnit commit message
+
+```shell
+git commit --amend -m "New commit message"
+```
