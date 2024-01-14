@@ -30,4 +30,4 @@
 
 ---
 
-Sepsáno léta Páně 2021–2023, použití na vlastní nebezpečí
+Sepsáno léta Páně 2021–2024, použití na vlastní nebezpečí
