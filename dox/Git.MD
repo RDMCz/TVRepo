@@ -17,3 +17,14 @@ git reset HEAD~
 ```shell
 git commit --amend -m "New commit message"
 ```
+
+## Zahodit necommitnuté změny
+
+<details>
+  <summary>⚠ Zobrazit</summary>
+  
+  ```shell
+  git restore .
+  ```
+
+</details>

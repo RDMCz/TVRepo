@@ -103,5 +103,4 @@ value, exists := mapa["klíč"]
 if exists {
     // Klíč existuje (exists je bool)
 }
-
 ```
