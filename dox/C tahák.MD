@@ -47,7 +47,7 @@ fclose(frt);
 // Binární – zápis
 FILE* fwb;
 fwb = fopen("soubor.bin", "wb");
-fwrite(&i, sizeof(i), 1, fwb); // ukazatel na první prvek (odkud bereme zapisovaný blok dat), velikost prvku, počet prvků, stream
+fwrite(&i, sizeof(i), 1, fwb); //ukazatel na první prvek (odkud bereme blok dat pro zápis), velikost prvku, počet prvků, stream
 fwrite(&f, sizeof(f), 1, fwb);
 fwrite(&d, sizeof(d), 1, fwb);
 fclose(fwb);

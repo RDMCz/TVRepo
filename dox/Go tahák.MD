@@ -68,7 +68,7 @@ array := [...]int{1, 2, 3} // Délku je možné nahradit trojtečkou
 // Nová slice
 var slice []int // Inicializace prázdné slice
 slice := make([]int, nItems) // Slice s délkou určenou proměnnou
-slice := []int{1, 2, 3}
+slice := []int{1, 2, 3} // Bez trojtečky se jedná o slice
 
 // array to slice
 slice := array[:]
@@ -83,6 +83,9 @@ slice = append([]int{-2, -1}, slice...) // -2 -1 0 1 2 3 4 5 6
 
 // Řazení
 sort.Sort(sort.Reverse(sort.StringSlice(poleNeboSliceStringů)))
+
+// Odebrání ze slice
+slice = slices.Delete(slice, startInclusive, endExclusive)
 ```
 
 ## Mapy
@@ -91,7 +94,8 @@ sort.Sort(sort.Reverse(sort.StringSlice(poleNeboSliceStringů)))
 // Mapa (slovník) přiřazující stringu int
 var mapa map[string]int
 
-// Inicializace mapy
+// Inicializace mapy (dva způsoby)
+mapa = map[string]int{}
 mapa = make(map[string]int)
 
 // Editace hodnot klasicky
@@ -103,4 +107,45 @@ value, exists := mapa["klíč"]
 if exists {
     // Klíč existuje (exists je bool)
 }
+```
+
+## Misc
+
+### Generování kombinací
+
+```go
+    n := 5
+    k := 3
+
+    combination := make([]int, k)
+    for i := 0; i < k; i++ {
+        combination[i] = i
+    }
+
+    var index, maxValue, newValue int
+
+combinationsloop:
+    for {
+        fmt.Println(combination)
+        index = k - 1
+        maxValue = n - 1
+        for {
+            if index == 0 && combination[index] == maxValue {
+                break combinationsloop
+            }
+            if combination[index] < maxValue {
+                break
+            }
+            index--
+            maxValue--
+        }
+        combination[index]++
+        newValue = combination[index]
+        index++
+        for index <= k-1 {
+            newValue++
+            combination[index] = newValue
+            index++
+        }
+    }
 ```
