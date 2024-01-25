@@ -5,8 +5,8 @@
 ```go
 // int to string
 import "strconv"
-num = 123
-text = strconv.Itoa(num) // "123"
+num := 123
+text := strconv.Itoa(num) // "123"
 
 // string to int
 text := "123"
@@ -20,7 +20,7 @@ num, err := strconv.Atoi(text)
 ```go
 import "fmt"
 var number int
-n, err = fmt.Sscanf("Number 52 ...", "Number %d ...", &number)
+n, err := fmt.Sscanf("Number 52 ...", "Number %d ...", &number)
 ```
 
 ## Cykly
@@ -28,12 +28,12 @@ n, err = fmt.Sscanf("Number 52 ...", "Number %d ...", &number)
 ### Iterace přes string
 
 ```go
-// Iterace po ~znacích
+// Iterace po "znacích"
 for _, char := range text { 
     // char ...
 }
 
-// Iterace pozpátku
+// Iterace pozpátku (pozor na len() u řetězců obsahující non-ASCII znaky)
 for i := len(text) - 1; i >= 0; i-- {
     // text[i] ...
 }
@@ -111,41 +111,44 @@ if exists {
 
 ## Misc
 
-### Generování kombinací
+<details>
+  <summary>Generování kombinací (bez balíku gonum)</summary>
 
-```go
-    n := 5
-    k := 3
+  ```go
+      n := 5
+      k := 3
+  
+      combination := make([]int, k)
+      for i := 0; i < k; i++ {
+          combination[i] = i
+      }
+  
+      var index, maxValue, newValue int
+  
+  combinationsloop:
+      for {
+          fmt.Println(combination)
+          index = k - 1
+          maxValue = n - 1
+          for {
+              if index == 0 && combination[index] == maxValue {
+                  break combinationsloop
+              }
+              if combination[index] < maxValue {
+                  break
+              }
+              index--
+              maxValue--
+          }
+          combination[index]++
+          newValue = combination[index]
+          index++
+          for index <= k-1 {
+              newValue++
+              combination[index] = newValue
+              index++
+          }
+      }
+  ```
 
-    combination := make([]int, k)
-    for i := 0; i < k; i++ {
-        combination[i] = i
-    }
-
-    var index, maxValue, newValue int
-
-combinationsloop:
-    for {
-        fmt.Println(combination)
-        index = k - 1
-        maxValue = n - 1
-        for {
-            if index == 0 && combination[index] == maxValue {
-                break combinationsloop
-            }
-            if combination[index] < maxValue {
-                break
-            }
-            index--
-            maxValue--
-        }
-        combination[index]++
-        newValue = combination[index]
-        index++
-        for index <= k-1 {
-            newValue++
-            combination[index] = newValue
-            index++
-        }
-    }
-```
+</details>
