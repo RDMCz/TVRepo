@@ -26,7 +26,7 @@ Kotangens|&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;|
 
 <br>
 
-<img style="" width="560" src="..\svg\goniofce\jednotkova.svg">
+<img alt="jednotková kružnice" width="560" src="..\svg\goniofce\jednotkova.svg">
 
 <br>
 

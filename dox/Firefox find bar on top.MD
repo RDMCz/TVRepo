@@ -1,11 +1,11 @@
 # Firefox – _Najít na stránce..._ ve vrchní části prohlížeče
 
-1. Přejdeme do `about:config` a nastavíme hodnotu `toolkit.legacyUserProfileCustomizations.stylesheets` na `true`
+1. Přejděte do `about:config` a nastavte hodnotu `toolkit.legacyUserProfileCustomizations.stylesheets` na `true`
 
-2. Ve složce s profilem vytvoříme podsložku s názvem `chrome`
-   * Do složky s profilem se dá dostat přes `about:support` – kolonka _Složka s profilem_
+2. Ve složce s profilem vytvořte podsložku s názvem `chrome`
+   * Do složky s profilem se lze dostat přes `about:support` – kolonka _Složka s profilem_
 
-3. Ve složce `<profile>\chrome` vytvoříme soubor `userChrome.css` a do něj napíšeme:
+3. Ve složce `<profile>\chrome` vytvořte soubor `userChrome.css` a do něj napište:
 
 ```css
 /* Move Find Bar above the page */

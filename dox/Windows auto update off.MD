@@ -1,15 +1,15 @@
 # Windows 10 Pro – Vypnutí automatického stahování a instalace aktualizací
 
-1. Otevřeme _Editor místních zásad skupiny_
+1. Otevřete _Editor místních zásad skupiny_
    * Např. pomocí `Win` + `R` a spuštěním `gpedit.msc` nebo vyhledáním výrazu _Upravit zásady skupiny_
 
-2. Navigujeme do _Konfigurace počítače_ → _Šablony pro správu_ → _Součásti systému Windows_ → _Windows Update_
+2. Navigujte do _Konfigurace počítače_ → _Šablony pro správu_ → _Součásti systému Windows_ → _Windows Update_
 
-3. Zde rozklikneme položku _Konfigurace automatických aktualizací_
+3. Zde rozklikněte položku _Konfigurace automatických aktualizací_
 
-4. Přepneme stav z _Není nakonfigurováno_ na _Povoleno_
+4. Přepněte stav z _Není nakonfigurováno_ na _Povoleno_
 
-5. V drop-down listu vybereme možnost _2 – Upozorňovat na stažení a automatickou instalaci_
+5. V drop-down listu vyberte možnost _2 – Upozorňovat na stažení a automatickou instalaci_
 
 * V nastavení v sekci Windows Update by nyní mělo být napsáno _*Některá nastavení určuje vaše organizace._
 

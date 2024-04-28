@@ -37,6 +37,9 @@ list.clear();
 // Přidání prvku na konec
 list.push_back(0);
 
+// Přidání více prvků na konec
+list.insert(list.end(), { 1, 2, 3 });
+
 // Procházení prvků
 for (const int& item : list) {
     std::cout << item << "\n";
@@ -103,6 +106,19 @@ while (getline(ss, part, ',')) {
 std::string text = "abcdoldefgholdijkl";
 text = std::regex_replace(text, std::regex("old"), "new");
 std::cout << text;//abcdnewefghnewijkl
+
+// -- Count character occurrences --------------------------------------------------------
+std::string text = "f 6/4/1 3/5/3 7/6/5"
+char char_to_find = '/'
+auto n_occurrences = std::count(text.begin(), text.end(), char_to_find);
+std::cout << n_occurrences;//6
+/* std::ranges::count can be used in C++20 */
+
+// -- Check if string contains a substring ------------------------------------------------
+if (str.find(sub_str) != std::string::npos) {
+    std::cout << "str contains sub_str!" << "\n";
+}
+/* std::string::contains can be used in C++23 */
 ```
 
 ## Objektové paradigma
