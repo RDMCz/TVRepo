@@ -1,9 +1,3 @@
-# Problémy
-
-## Matematika
-
-* [Goniometrické funkce](./dox/Goniometrické%20funkce.MD)
-
 ## Programování
 
 * [C tahák](./dox/C%20tahák.MD)
@@ -27,6 +21,10 @@
 
 * [Přihlášení bez nutnosti zadávání hesla či PINu](./dox/Windows%20auto%20login.MD)
 * [Vypnutí automatického stahování a instalace aktualizací](./dox/Windows%20auto%20update%20off.MD)
+
+## Teorie
+
+* [Goniometrické funkce](./dox/Goniometrické%20funkce.MD)
 
 ---
 

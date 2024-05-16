@@ -4,29 +4,29 @@
 
 Sinus|&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;|Arkus sinus
 :-:|---|:-:
-![sinus](../svg/goniofce/sinus.svg) || ![arcsinus](../svg/goniofce/arcsinus.svg)
+![sinus](../img/goniofce/sinus.svg) || ![arcsinus](../img/goniofce/arcsinus.svg)
 
 <br>
 
 Kosinus|&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;|Arkus kosinus
 :-:|---|:-:
-![cosinus](../svg/goniofce/cosinus.svg) || ![arccosinus](../svg/goniofce/arccosinus.svg)
+![cosinus](../img/goniofce/cosinus.svg) || ![arccosinus](../img/goniofce/arccosinus.svg)
 
 <br>
 
 Tangens|&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;|Arkus tangens
 :-:|---|:-:
-![tangens](../svg/goniofce/tangens.svg) || ![arctangens](../svg/goniofce/arctangens.svg)
+![tangens](../img/goniofce/tangens.svg) || ![arctangens](../img/goniofce/arctangens.svg)
 
 <br>
 
 Kotangens|&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;|Arkus kotangens
 :-:|---|:-:
-![cotangens](../svg/goniofce/cotangens.svg) || ![arccotangens](../svg/goniofce/arccotangens.svg)
+![cotangens](../img/goniofce/cotangens.svg) || ![arccotangens](../img/goniofce/arccotangens.svg)
 
 <br>
 
-<img alt="jednotková kružnice" width="560" src="..\svg\goniofce\jednotkova.svg">
+![jednotková kružnice](../img/goniofce/jednotkova.svg)
 
 <br>
 
@@ -42,11 +42,6 @@ Kotangens|&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;|
 </table>
 
 <br>
-
----
-
-![arcgraf1](../svg/goniofce/arcgraf1.svg)
-![arcgraf2](../svg/goniofce/arcgraf2.svg)
 
 <!-- $$
 \begin{align}
