@@ -195,7 +195,14 @@ IJKL
 * Řetězec musí končit znakem `\0`
   * Pokud v kódu píšeme řetězec do dvojitých uvozovek, přidá se znak automaticky
   * Manuálně je znak potřeba přidávat na konec, pokud s řetězcem pracujeme jako s polem
-* Funkce z knihovny `string.h` – `strlen` (délka), `strcpy` (kopírovat), `strcat` (spojit), `strch` (hledat znak), `strcmp` (porovnat), `strstr` (hledat podřetězec)
+* Funkce z knihovny `string.h`
+  * `strlen` (délka)
+  * `strcpy` (kopírovat)
+  * `strcat` (spojit)
+  * `strch` (hledat znak)
+  * `strcmp` (porovnat)
+  * `strstr` (hledat podřetězec)
+  * `strtok` (~split)
 
 ## Strukturovaný datový typ
 
