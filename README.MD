@@ -1,30 +1,32 @@
 ## Programování
 
-* [C tahák](./dox/C%20tahák.MD)
-* [C++ tahák](./dox/Cpp%20tahák.MD)
-* [Go tahák](./dox/Go%20tahák.MD)
-* [Java tahák I: Strukturované paradigma](./dox/Java%208%20tahák.MD)
-* [Java tahák II: Objektové paradigma](./dox/Java%2017%20tahák.MD)
-* [Python tahák](./dox/Py%20tahák.MD)
+* [C tahák](./dox/c_tahak.MD)
+* [C++ tahák](./dox/cpp_tahak.MD)
+* [Go tahák](./dox/go_tahak.MD)
+* [Java tahák I: Strukturované paradigma](./dox/java_8_tahak.MD)
+* [Java tahák II: Objektové paradigma](./dox/java_17_tahak.MD)
+* [Python tahák](./dox/py_tahak.MD)
 
 ## Software
 
 ### Firefox
 
-* [_Najít na stránce..._ ve vrchní části prohlížeče](./dox/Firefox%20find%20bar%20on%20top.MD)
+* [Zprovoznění souboru _userChrome.css_](./dox/firefox/userchrome.MD)
+* [_Najít na stránce..._ ve vrchní části prohlížeče](./dox/firefox/find_bar_on_top.MD)
+* [Vypnutí novinek z verze 131 – tlačítko _Seznam všech panelů_ a náhledy panelů](./dox/firefox/disable_v131.MD)
 
 ### Git
 
-* [Git KPZ](./dox/Git.MD)
+* [Git KPZ](./dox/git_kpz.MD)
 
 ### Windows 10
 
-* [Přihlášení bez nutnosti zadávání hesla či PINu](./dox/Windows%20auto%20login.MD)
-* [Vypnutí automatického stahování a instalace aktualizací](./dox/Windows%20auto%20update%20off.MD)
+* [Přihlášení bez nutnosti zadávání hesla či PINu](./dox/windows_auto_login.MD)
+* [Vypnutí automatického stahování a instalace aktualizací](./dox/windows_auto_update_off.MD)
 
 ## Teorie
 
-* [Goniometrické funkce](./dox/Goniometrické%20funkce.MD)
+* [Goniometrické funkce](./dox/goniometricke_funkce.MD)
 
 ---
 
