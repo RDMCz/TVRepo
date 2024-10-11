@@ -13,6 +13,6 @@
 
 * V nastavení v sekci Windows Update by nyní mělo být napsáno _*Některá nastavení určuje vaše organizace._
 
-* Windows nyní nebude automaticky stahovat aktualizace po jejich nalezení, ale pošle upozornění typu _Potřebujete určité aktualizace_. Kliknutí na toto upozornění otevře Windows Update v nastavení, kde uživatel může (a nemusí) stažení a instalaci potvrdit
+* Windows nyní nebude automaticky stahovat aktualizace po jejich nalezení, ale pošle upozornění typu _Potřebujete určité aktualizace_. Kliknutí na toto upozornění otevře Windows Update v nastavení, kde uživatel může (a nemusí) stažení a instalaci potvrdit.
 
-* Jakmile jsou nalezeny nějaké aktualizace, další už se nehledají. Tzn., že pokud jsou nalezené aktualizace nainstalovány až po delší době, je dobré po jejich instalaci spustit ruční vyhledávání
+* Jakmile jsou nalezeny nějaké aktualizace, další už se nehledají. Tzn., že pokud jsou nalezené aktualizace nainstalovány až po delší době, je dobré po jejich instalaci spustit ruční vyhledávání.
