@@ -2,9 +2,9 @@
 
 ## Vypnutí výchozího `Shift` + `Win` + `S`
 
-Vytvoře soubor s příponou `.reg` a tímto obsahem:
+Vytvořte soubor s příponou `.reg` a tímto obsahem:
 
-```Windows Registry Entries
+```reg
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
@@ -33,7 +33,9 @@ Z <https://getsharex.com/downloads> stáhněte ShareX a program spusťte. V nast
     * _Show position and size info_
     * _Show magnifier near cursor_
   * _Advanced_
-    * _RegionCaptureDisableAnnotation_
+    * _RegionCaptureDisableAnnotation_ (vypne horní toolbar během region capture)
 * _Hotkey settings_
   * _Capture region_ změňte na `Shift` + `Win` + `S`
   * Ostatní funkce lze smazat pomocí _Remove_
+
+Animace rámečku výběru lze vypnout pouze v horním toolbaru během region capture, tudíž je pro jejich vypnutí nutné dočasně nastavit  _RegionCaptureDisableAnnotation_ na _False_.
