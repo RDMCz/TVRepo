@@ -31,11 +31,13 @@
 
 * `browser.translations.enable` → `false` – vypne podprůměrný Firefox překlad, pro překlad lze použít [TWP - Translate Web Pages](https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/)
 
+* `network.protocol-handler.external.mailto` → `false` – vypne neúprosný popup _Přidat xyz.cz jako aplikaci pro odkazy typu mailto?_
+
 ## userChrome.css
 
 * K souboru se dostaneme přes: `about:support` → _Složka s profilem_ → _Otevřít_ → `chrome` → `userChrome.css`
 
-* Vlatní pravidla píšeme pod řádek `/* Please write your custom CSS under this line*/`
+* Vlastní pravidla píšeme pod řádek `/* Please write your custom CSS under this line*/`
 
 ```css
 /* Skrytí tlačítka 'Sdílet tuto stránku s vaším telefonem' */
@@ -45,3 +47,17 @@
 #alltabs-button { display: none !important; }
 .titlebar-spacer[type="post-tabs"] { display: none !important; } 
 ```
+
+---
+
+## Nastavení TWP - Translate Web Pages
+
+* `Ctrl` + `Shift` + `A` nás přesune do správy rozšíření, zde lze nastavovat doplňky (_[…] → Možnosti_)
+
+* _Překlady_
+  * _Zobrazit tlačítko pro překlad vybraného textu_
+
+* _Klávesové zkratky_
+
+* _Ostatní_
+  * _Zobrazit možnost překladu vybraného textu v kontextové nabídce_
