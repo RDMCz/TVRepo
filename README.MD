@@ -1,11 +1,11 @@
 ## Programování
 
-* [C tahák](./dox/c_tahak.MD)
-* [C++ tahák](./dox/cpp_tahak.MD)
-* [Go tahák](./dox/go_tahak.MD)
-* [Java tahák I: Strukturované paradigma](./dox/java_8_tahak.MD)
-* [Java tahák II: Objektové paradigma](./dox/java_17_tahak.MD)
-* [Python tahák](./dox/py_tahak.MD)
+* [C tahák](./dox/coding/c_tahak.MD)
+* [C++ tahák](./dox/coding/cpp_tahak.MD)
+* [Go tahák](./dox/coding/go_tahak.MD)
+* [Java tahák I: Strukturované paradigma](./dox/coding/java_8_tahak.MD)
+* [Java tahák II: Objektové paradigma](./dox/coding/java_17_tahak.MD)
+* [Python tahák](./dox/coding/py_tahak.MD)
 
 ## Software
 
@@ -21,12 +21,8 @@
 
 ### Windows 10
 
-* [Přihlášení bez nutnosti zadávání hesla či PINu](./dox/windows_auto_login.MD)
-* [Vypnutí automatického stahování a instalace aktualizací](./dox/windows_auto_update_off.MD)
-
-## Teorie
-
-* [Goniometrické funkce](./dox/goniometricke_funkce.MD)
+* [Přihlášení bez nutnosti zadávání hesla či PINu](./dox/windows/windows_auto_login.MD)
+* [Vypnutí automatického stahování a instalace aktualizací](./dox/windows/windows_auto_update_off.MD)
 
 ---
 

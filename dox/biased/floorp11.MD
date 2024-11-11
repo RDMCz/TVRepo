@@ -1,4 +1,4 @@
-# Floorp jakožto náhrada Firefoxu
+# Floorp 11 jakožto náhrada Firefoxu
 
 * Floorp lze stáhnout na <https://floorp.app/en/download>
 
