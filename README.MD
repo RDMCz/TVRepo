@@ -5,6 +5,7 @@
 * [Go tahák](./dox/coding/go_tahak.MD)
 * [Java tahák I: Strukturované paradigma](./dox/coding/java_8_tahak.MD)
 * [Java tahák II: Objektové paradigma](./dox/coding/java_17_tahak.MD)
+* [Lua tahák](./dox/coding/lua_tahak.MD)
 * [Python tahák](./dox/coding/py_tahak.MD)
 
 ## Software

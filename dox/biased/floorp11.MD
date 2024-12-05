@@ -1,6 +1,7 @@
 # Floorp 11 jakožto náhrada Firefoxu
 
 * Floorp lze stáhnout na <https://floorp.app/en/download>
+  * U _Portable_ verze je problematičtější nastavovat Floorp jako výchozí program (prohlížeč webu, pdf, ...); nedoporučuji
 
 * V úvodním wizardovi vybrat _Základní_ template
 

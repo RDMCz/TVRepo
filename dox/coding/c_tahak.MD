@@ -1,5 +1,7 @@
 # Jazyk C
 
+(Toto zdaleka není veškerý výčet funkcí a vlastností daného programovacího jazyka. Jedná se pouze o&nbsp;mé zápisky vzniklé během řešení [AoC](https://github.com/RDMCz/AdventOfCode) a/nebo studia na VŠ.)
+
 * Kompilovaný (obvykle), staticky typovaný, strukturovaný, ... programovací jazyk
 * Obsahuje minimum abstrakce / syntaktického cukru
 * Poskytuje/vyžaduje přímou kontrolu nad (de)alokací paměti

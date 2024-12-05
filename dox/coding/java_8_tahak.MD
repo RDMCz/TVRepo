@@ -1,5 +1,7 @@
 # Java tahák I: Strukturované paradigma
 
+(Toto zdaleka není veškerý výčet funkcí a vlastností daného programovacího jazyka. Jedná se pouze o&nbsp;mé zápisky vzniklé během řešení [AoC](https://github.com/RDMCz/AdventOfCode) a/nebo studia na VŠ.)
+
 ## Úryvky
 
 ### Datové typy

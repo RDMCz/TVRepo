@@ -1,4 +1,6 @@
-# Go tahák
+# Go 1.21 tahák
+
+(Toto zdaleka není veškerý výčet funkcí a vlastností daného programovacího jazyka. Jedná se pouze o&nbsp;mé zápisky vzniklé během řešení [AoC](https://github.com/RDMCz/AdventOfCode) a/nebo studia na VŠ.)
 
 ## Datové typy
 
