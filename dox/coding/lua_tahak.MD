@@ -65,6 +65,8 @@ print(dict[3])      --> nil
 print(dict["ABCD"]) --> nil
 ```
 
+Pro zjištění počtu klíčů ve slovníku je bohužel nutno iterovat přes všechny páry a inkrementovat si proměnnou.
+
 ### Table jako množina (set)
 
 Množina je v podstatě slovník bez hodnot, použijeme proto slovník s boolean hodnotami:
@@ -166,18 +168,29 @@ end
 print(table.concat(result, ", ")) --> The, quick, brown, fox, jumps, over, the, lazy, dog...
 ```
 
-Split podle konrétního podřetězce / výrazu je komplikovanější, můžeme zkusit fintu ve tvaru `string.gmatch(text .. "<příkladVýrazu>", "(.-)(<výraz>)")`:
+Split podle konrétního podřetězce / výrazu je komplikovanější, můžeme zkusit funkci:
 
 ```lua
-local text = "1,2,3,(4,5),6,7,(8,9,10),11,(12,13),14"
-local result = {}
-for word in string.gmatch(text .. "(0,0)", "(.-)(%(%d+,%d+%))") do
-    table.insert(result, word)
+local function string_split(text, pattern)
+    local result = {}
+    local last_index_after
+    -- "(.-)pattern" matches least amount of characters followed by the pattern; "()" matches index after said pattern
+    for match, index_after in string.gmatch(text, "(.-)" .. pattern .. "()") do
+        table.insert(result, match)
+        last_index_after = index_after
+    end
+    -- If there was no match (result table is empty) then return one item table with input text (no splitting was made)
+    if next(result) == nil then
+        return { text }
+    end
+    -- If the text does not end with pattern, then there's still last group of characters missing from the table,
+    -- that's why we keep track of the index after last match
+    if last_index_after ~= nil and last_index_after <= #text then
+        table.insert(result, string.sub(text, last_index_after))
+    end
+    return result
 end
-print(table.concat(result, " | ")) --> 1,2,3, | ,6,7,(8,9,10),11, | ,14
 ```
-
-`<příkladVýrazu>` ke vstupu přidáváme, protože bez něj tento postup nevrací poslední část. Pokud ale vstup již končí na výraz, kterým splitujeme, bude mít výsledná kolekce o prvek navíc, a ten bude prázdný.
 
 ### Vyzobání hodnot z řetězce à la `sscanf`
 
