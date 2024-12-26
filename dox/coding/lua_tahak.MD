@@ -6,6 +6,8 @@
 
 Lua má jediný typ kolekce zvaný `table`, který může sloužit jako pole, slovník, struktura, ... a indexuje jej od jedničky.
 
+Table je předávána referencí.
+
 ### Table jako 1D pole
 
 ```lua
@@ -38,6 +40,17 @@ end
 print(index_of[9])   --> 3
 print(index_of["A"]) --> 4
 -- ⇒ při více výskytech stejného prvku vrací index posledního výskytu
+
+-- Přiřazení prvků do proměnných:
+local a, b, c, d = table.unpack(collection)
+print(a .. b .. c .. d) --> 798A
+
+-- Tables jsou předávány referencí, nelze je jednoduše porovnávat nebo používat jako klíč:
+print({0, 1, 2} == {0, 1, 2}) --> false
+-- Tables používané jako 1D pole lze porovnávat pomocí concat:
+print(table.concat({0, 1, 2}, ",") == table.concat({0, 1, 2}, ",")) --> true
+-- Pozor při volbě separátoru:
+print(table.concat({ ",", "A" }, ",") == table.concat({ "", "", "A" }, ",")) --> true !
 ```
 
 ### Table jako asociativní pole (dictionary)
