@@ -28,3 +28,22 @@ result = split_string_at_nth_occurrence(string, delimiter, n)
 
 # Result: ['1,2,3', '4,5,6', '7,8,9', '10']
 ```
+
+## pip a venv
+
+### Smazání všech globálních balíků (PowerShell one-liner)
+
+```ps1
+# https://stackoverflow.com/a/73721750
+pip freeze > unins ; pip uninstall -y -r unins ; del unins
+```
+
+### Vytvoření a aktivace virtuálního prostředí (PowerShell)
+
+```ps1
+# Vytvoření virtuálního prostředí
+py -m venv .venv
+
+# Aktivace virtuálního prostředí
+.venv\Scripts\activate
+```

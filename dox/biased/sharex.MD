@@ -13,13 +13,14 @@ Windows Registry Editor Version 5.00
 
 Soubor otevřete a potvrďte změnu v registru. Restartujte počítač.
 
-## Nastavení ShareX
+## Nastavení ShareX (16.1.0)
 
 Z <https://getsharex.com/downloads> stáhněte ShareX a program spusťte. V nastavení změňte:
 
 * _Application settings_
   * _General_
     * Zde lze vypnout akce, které se stanou při kliknutí na ikonku v trayi (_None_)
+    * _Automatically check for updates_
   * _Integration_
     * _Run ShareX when Windows starts_
 * _Task settings_
