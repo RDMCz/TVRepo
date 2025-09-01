@@ -27,4 +27,12 @@
 
 ---
 
-Sepsáno léta Páně 2021–2024, použití na vlastní nebezpečí
+Sepsáno léta Páně 2021–2025, použití na vlastní nebezpečí.
+
+---
+
+Moje další repozitáře:
+
+* [MKRepo](https://github.com/RDMCz/MKRepo) – kuchařky pro VŠ matematiku
+* [MZRepo](https://github.com/RDMCz/MZRepo) – materiály k maturitě z IT, 2021
+* [SZRepo](https://github.com/RDMCz/SZRepo) – materiály ke státnicím z IT, 2024/2026

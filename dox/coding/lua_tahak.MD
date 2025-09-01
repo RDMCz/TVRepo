@@ -1,6 +1,7 @@
 # Lua 5.4 tahák
 
-(Toto zdaleka není veškerý výčet funkcí a vlastností daného programovacího jazyka. Jedná se pouze o&nbsp;mé zápisky vzniklé během řešení [AoC](https://github.com/RDMCz/AdventOfCode) a/nebo studia na VŠ.)
+> [!NOTE]  
+> Toto zdaleka není veškerý výčet funkcí a vlastností daného programovacího jazyka.<br>Jedná se pouze o&nbsp;mé zápisky vzniklé během řešení [AoC](https://github.com/RDMCz/AdventOfCode) a/nebo při (samo)studiu.
 
 ## Kolekce
 
@@ -181,7 +182,7 @@ end
 print(table.concat(result, ", ")) --> The, quick, brown, fox, jumps, over, the, lazy, dog...
 ```
 
-Split podle konrétního podřetězce / výrazu je komplikovanější, můžeme zkusit funkci:
+Split podle konkrétního podřetězce / výrazu je komplikovanější, můžeme zkusit funkci:
 
 ```lua
 local function string_split(text, pattern)

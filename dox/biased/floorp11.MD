@@ -3,7 +3,7 @@
 * Floorp lze stáhnout na <https://floorp.app/en/download>
   * U _Portable_ verze je problematičtější nastavovat Floorp jako výchozí program (prohlížeč webu, pdf, ...); nedoporučuji
 
-* V úvodním wizardovi vybrat _Základní_ template
+* V úvodním wizardovi vybrat _Základní_ template, vzhled raději zatím nechat být a vybrat později v nastavení (vzhled vybraný z wizarda se může chovat podivně)
 
 * Stejně jako ve Firefoxu můžeme z lišty odebrat (jen některé) rušivé prvky
 
@@ -61,4 +61,5 @@
 * _Klávesové zkratky_
 
 * _Ostatní_
+  * _V místní nabídce se zobrazí možnost překladu stránky_
   * _Zobrazit možnost překladu vybraného textu v kontextové nabídce_
