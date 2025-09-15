@@ -27,7 +27,7 @@
 
 ---
 
-Sepsáno léta Páně 2021–2025, použití na vlastní nebezpečí.
+Sepsáno léta Páně 2021–2025. Použití na vlastní nebezpečí.
 
 ---
 

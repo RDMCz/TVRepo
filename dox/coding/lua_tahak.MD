@@ -69,7 +69,7 @@ local dict = {
     ["Key1"] = "Value1",
     "Item1",
     [2] = "Value2",
-    --"Item2", -- Nelze, znamenalo by duplicitní index
+    --"Item2", -- Nelze, znamenalo by duplicitní index ([2] už je obsazeno)
 }
 
 print(dict["Key1"]) --> Value1
@@ -131,7 +131,7 @@ local search_i = 1
 while true do
     local searched_start_i, searched_end_i = string.find(text, "%(%d+,%d+%)", search_i, false)
     if searched_start_i == nil then break end
-    io.write(searched_start_i .. ", " ..searched_end_i .. "; ") -- 7, 11; 29, 35;
+    io.write(searched_start_i .. ", " ..searched_end_i .. "; ") --> 7, 11; 29, 35;
     search_i = searched_end_i + 1
 end
 io.write("\n")
@@ -171,7 +171,7 @@ end
 
 ### String split?
 
-Lua nemá metodu pro splitování řetězce. Pokud chceme splitovat podle znaku / sady znaků, použijeme opět `string.gmatch`, které lze v tomto případě chápat jako opak splitu. Chceme-li splitovat podle mezery, hledáme vše, co není mezera a má libovolnou nenulovou délku:
+Lua nemá metodu pro splitování řetězce. Pokud chceme splitovat podle znaku / sady znaků, použijeme opět `string.gmatch`, které lze v tomto případě chápat jako opak splitu. Chceme-li splitovat podle mezery, hledáme vše, co neobsahuje mezeru a má libovolnou nenulovou délku:
 
 ```lua
 local text = "The quick brown fox   jumps over      the lazy dog..."
